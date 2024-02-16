@@ -1,3 +1,10 @@
+/*Saya Rakha Dhifiargo Hariadi
+ NIM 2209489 mengerjakan soal 
+ Latihan praktikum 2 dalam mata
+ kuliah Struktur data
+ untuk keberkahanNya maka saya tidak
+ melakukan kecurangan seperti 
+ yang telah dispesifikasikan. Aamiin.*/ 
 class Shirt extends Clothing
 {
     private String color; // atribut kelas shirt
