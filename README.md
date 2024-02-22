@@ -31,8 +31,14 @@ Atribut:
 
 3. Shirt
    
-Atribut:
+
 - Color
 - Sleeve Type
 
-Disini pewaris paling bawahnya adalah Shirt yang parentnya adalah Clothing yang dimana parentnya juga adalah Product. Artinya Product adalah base class atau class utama. Alasan desain inheritance saya seperti itu karena menurut saya Kaos sudah pasti Pakaian, lalu Pakaian sudah pasti Produk. Sedangkan Produk belum tentu Pakaian saja, dan Pakaian juga belum tentu Kaos saja. Lalu juga atribut-atribut dari Product bisa dipakai di Clothing dan Shirt, lalu atribut-atribut yang di Clothing pun bisa dipakai di Shirt, sedangkan tidak untuk sebaliknya. Itulah alasan utama mengapa desain saya seperti itu
+Disini pewaris paling bawahnya adalah Shirt yang parentnya adalah Clothing yang dimana parentnya juga adalah Product. Artinya Product adalah base class atau class utama. Alasan desain inheritance saya seperti itu karena menurut saya Kaos sudah pasti Pakaian, lalu Pakaian sudah pasti Produk. Sedangkan Produk belum tentu Pakaian saja, dan Pakaian juga belum tentu Kaos saja. Lalu juga atribut-atribut dari Product bisa dipakai di Clothing dan Shirt, lalu atribut-atribut yang di Clothing pun bisa dipakai di Shirt, sedangkan tidak untuk sebaliknya. Itulah alasan utama mengapa desain saya seperti itu.
+
+Screenshot Java, Python, CPP
+![Screenshot (515)](https://github.com/rakhargo/LP2DPBO2024C1/assets/117525800/b6147a84-1cbc-47c4-84f8-e411090fb89e)
+
+Screenshot PHP
+Atribut:![Screenshot (517)](https://github.com/rakhargo/LP2DPBO2024C1/assets/117525800/7b03128e-b24a-4518-9cff-4f9dd68bd12f)
