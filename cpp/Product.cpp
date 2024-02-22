@@ -1,32 +1,31 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h> // include library
 
 using namespace std;
 
-class Product 
+class Product // class product
 {
     
-private:
+private: // atribut dari class product
     int idProduct;
     string name;
     string brand;
     string price;
 
 public:
-    Product()
+    Product() // konstruktor kosong
     {
 
     }
 
-    Product(int id, string name, string brand, string price)
+    Product(int id, string name, string brand, string price) // konstruktor dengan parameter
     {
-        this->idProduct = id;
+        this->idProduct = id; // set semua atribut
         this->name = name;
         this->brand = brand;
         this->price = price;
     }
 
-    // getter dan setter
+    // setter dan getter setiap atribut
     void setIdProduct(int id)
     {
         this->idProduct = id;
@@ -65,5 +64,10 @@ public:
     string getPrice()
     {
         return this->price;
+    }
+
+    ~Product() // destruktor
+    {
+        
     }
 };

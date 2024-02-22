@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int maxID = 2; // keperluan untuk membuat tabel
+    int maxID = 2; // keperluan untuk membuat tabel dengan mencari length terpanjang untuk setiap data
     int maxNama = 4;
     int maxBrand = 5;
     int maxHarga = 5;
@@ -15,7 +15,7 @@ int main()
     int maxWarna = 5;
     int maxSleeve = 12;
 
-    vector<Shirt> listShirt; // array list utama untuk data
+    vector<Shirt> listShirt; // vector utama untuk data
 
     cout << "Masukkan banyaknya data Shirt:" << endl;
     int n;
@@ -23,9 +23,9 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        int id, size; string name, brand, price, material, gender, color, sleeve_type;
+        int id, size; string name, brand, price, material, gender, color, sleeve_type; // variabel temp untuk menampung sementara data masukan
 
-        cout << "ID Produk                 : "; cin >> id;
+        cout << "ID Produk                 : "; cin >> id; // meminta masukan untuk setiap atribut
         cout << "Nama Produk               : "; cin >> name;
         cout << "Brand Produk              : "; cin >> brand;
         cout << "Harga Produk              : "; cin >> price;
@@ -37,8 +37,8 @@ int main()
         cout << "Warna Kaos                : "; cin >> color;
         cout << "Jenis Lengan Kaos         : "; cin >> sleeve_type;
 
-        Shirt temp(color, sleeve_type);
-
+        Shirt temp(color, sleeve_type); // temp untuk menampung sementara objek untuk dimasukkan ke list data
+        // meng set sisa atribut
         temp.setIdProduct(id);
         temp.setName(name);
         temp.setBrand(brand);
@@ -47,7 +47,7 @@ int main()
         temp.setMaterial(material);
         temp.setGender(gender);
 
-        listShirt.push_back(temp);
+        listShirt.push_back(temp); // memasukkan ke list utama
 
         // proses mencari max length, keperluan membuat tabel
         if (to_string(id).length() > maxID) maxID = to_string(id).length();
@@ -129,7 +129,7 @@ int main()
     {
 
         cout << "|";
-        cout << listShirt[i].getIdProduct();
+        cout << listShirt[i].getIdProduct(); // menggunakan getter id
         for (int j = 0; j < maxID - to_string(listShirt[i].getIdProduct()).length(); j++) 
         {
             cout << " ";

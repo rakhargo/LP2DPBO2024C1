@@ -1,10 +1,9 @@
-#include <iostream>
-#include <string>
-#include "Product.cpp"
+#include <bits/stdc++.h>
+#include "Product.cpp" // include file class parent
 
 using namespace std;
 
-class Clothing : public Product 
+class Clothing : public Product // class clothing mewarisi class product
 {
 
 private:
@@ -13,19 +12,19 @@ private:
     string gender;
 
 public:
-    Clothing() 
+    Clothing() // konstruktor kosong
     {
 
     }
 
-    Clothing(int size, string material, string gender)
+    Clothing(int size, string material, string gender) // konstruktor dengan parameter 
     {
-        this->size = size;
+        this->size = size; // set semua atribut
         this->material = material;
         this->gender = gender;
     }
 
-    // getter dan setter
+    // setter dan getter semua atribut
     void setSize(int size) {
         this->size = size;
     }
@@ -51,5 +50,10 @@ public:
     string getGender() 
     {
         return this->gender;
+    }
+
+    ~Clothing() // destruktor
+    {
+        
     }
 };
