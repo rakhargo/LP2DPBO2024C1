@@ -15,6 +15,7 @@ Saya Rakha Dhifiargo Hariadi
 Program terdiri dari 3 kelas, yaitu kelas Product, Clothing, Shirt. Ketiga objek tersebut jenisnya sama yaitu barang untuk dijual. Sehingga ketiga kelas tersebut mengimplementasikan konsep Multi-level Inheritance.
 
 1. Product
+
 Atribut:
 - ID Product
 - Name
@@ -22,12 +23,14 @@ Atribut:
 - Price
 
 2. Clothing
+   
 Atribut:
 - Size
 - Material
 - Gender
 
 3. Shirt
+   
 Atribut:
 - Color
 - Sleeve Type
