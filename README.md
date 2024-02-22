@@ -16,20 +16,20 @@ Program terdiri dari 3 kelas, yaitu kelas Product, Clothing, Shirt. Ketiga objek
 
 1. Product
 Atribut:
-ID Product
-Name
-Brand
-Price
+- ID Product
+- Name
+- Brand
+- Price
 
 2. Clothing
 Atribut:
-Size
-Material
-Gender
+- Size
+- Material
+- Gender
 
 3. Shirt
 Atribut:
-Color
-Sleeve Type
+- Color
+- Sleeve Type
 
 Disini pewaris paling bawahnya adalah Shirt yang parentnya adalah Clothing yang dimana parentnya juga adalah Product. Artinya Product adalah base class atau class utama. Alasan desain inheritance saya seperti itu karena menurut saya Kaos sudah pasti Pakaian, lalu Pakaian sudah pasti Produk. Sedangkan Produk belum tentu Pakaian saja, dan Pakaian juga belum tentu Kaos saja. Lalu juga atribut-atribut dari Product bisa dipakai di Clothing dan Shirt, lalu atribut-atribut yang di Clothing pun bisa dipakai di Shirt, sedangkan tidak untuk sebaliknya. Itulah alasan utama mengapa desain saya seperti itu
